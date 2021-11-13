@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+}
+
+main {
+    width: 400px;
+    height: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.disk {
+    width: 300px;
+    height: 300px;
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.disk-img {
+    position: absolute;
+    width: 260px;
+    height: 260px;
+    z-index: 2;
+}
+
+.disk-center {
+    position: absolute;
+    width: 260px;
+    height: 260px;
+    z-index: 1;
+}
+
+.disk-center-animation {
+    animation-name: rotation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes rotation {
+    0% {
+        transform:rotate(0deg);
+    }
+    100% {
+        transform:rotate(360deg);
+    }
+}
+
+.circle {
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+}
+
+.songs {
+    width: 360px;
+    height: 120px;
+    margin-top: 20px;
+}
+
+.buttons {
+    width: 360px;
+    height: 120px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.play_circle {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.play_triangle {
+    position: absolute;
+    width: 0; 
+    height: 0;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    z-index: 2;
+}
+
+/* .mix-button {
+    height: 18px;
+}
+
+.play-button {
+    width: 80px;
+    margin: 0 10px;
+    z-index: 1;
+}
+
+.pause-button {
+    position: absolute;
+    width: 80px;
+    z-index: 0;
+}
+
+.next-button {
+    width: 60px;
+    margin-right: 20px;
+}
+
+.previous-button {
+    width: 60px;
+    margin-left: 20px;
+}
+
+.replay-button {
+    height: 18px;
+} */

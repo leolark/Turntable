@@ -1,0 +1,12 @@
+body {
+    background-color: #ffd1bb;
+}
+
+main {
+    background-color: #fffaf6;
+}
+
+.circle {
+    background: #ffd1bb;
+    box-shadow: 0px 0px 13px 10px #ffd1bb;
+}
